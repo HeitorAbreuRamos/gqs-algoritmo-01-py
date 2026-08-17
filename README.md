@@ -2,9 +2,10 @@
 
 Respostas:
 
-1- O código é uma função que verifica se um texto é uma palavra ou frase que se lê igual de trás para frente.
+1- Esse  código é uma função que verifica se o texto é uma palavra ou frase que se lê igual de trás para frente.
 ​
 Como funciona?
+
 Respostas: 
 ​Tratamento: Remove espaços, pontuações e caracteres especiais, mantendo apenas letras/números e convertendo tudo para minúsculas.
 
