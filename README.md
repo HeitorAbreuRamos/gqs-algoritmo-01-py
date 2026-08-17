@@ -45,9 +45,33 @@ teste 2: true
 Nivel 3: Exemplo de Saida:
 
 
+A) O método analisar(entrada) verifica se uma string de entrada é um palíndromo através das seguintes etapas:
 
+- ​Tratamento de nulos: A primeira linha (if entrada is None: return False) verifica se o parâmetro recebido é nulo, retornando False imediatamente para evitar erros de execução.
 
+- ​Sanitização da string: A instrução re.sub(r'[^a-zA-Z0-9]', '', entrada).lower() 
 
+* utiliza expressão regular para remover todos os caracteres que não sejam letras sem acento ou números (como espaços, hífens e vírgulas). Em seguida, converte todo o texto para letras minúsculas (.lower()), garantindo uma comparação padronizada.
+
+- ​Inversão: O fatiamento limpa[::-1] cria uma nova string com os caracteres da frase sanitizada em ordem invertida.
+
+- ​Validação: A instrução return limpa == invertida compara a string tratada com sua versão invertida, retornando True se forem idênticas (caracterizando um palíndromo) ou False caso contrário.
+
+B) Misterio dos testes:
+
+​Resposta:
+
+​A função valida se o texto é um palíndromo após remover espaços, pontuações e padronizar o texto em minúsculas. 
+
+-O comportamento de cada teste ocorre pelos seguintes motivos:
+
+​•Teste 1 (False): A frase "A sacada da casa de cadasa" contém um erro de digitação na palavra final ("cadasa" em vez de "casa"). Após a remoção de espaços e a conversão para minúsculas, obtém-se a string asacadadacasadecadasa.
+- Ao invertê-la, o resultado é asadacedasacadacasa. 
+
+- Como as strings não são idênticas, a função retorna False.
+• ​Teste 2 (True): A frase "Socorram-me, subi no ônibus em Marrocos" é um palíndromo. Após a sanitização — que remove o hífen, a vírgula e os espaços —, a string resultante é socorrammesubinoonibusemmarrocos.
+
+- A sua inversão gera exatamente a mesma sequência de caracteres, fazendo com que a verificação de igualdade retorne True.
 
 
 
