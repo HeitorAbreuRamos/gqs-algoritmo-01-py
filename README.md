@@ -18,3 +18,4 @@ Respostas:
 Resposta:
 
 Um palíndromo é uma palavra, frase ou número que pode ser lido da mesma forma tanto da esquerda para a direita quanto da direita para a esquerda, ignorando espaços, acentos e pontuações.
+
